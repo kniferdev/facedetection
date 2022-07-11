@@ -102,7 +102,7 @@ class App extends React.Component {
     .then(response => {
       console.log('face detection analyzing...', response)
       if (response) {
-        fetch('http://localhost:3000/image', {
+        fetch('https://serene-earth-74877.herokuapp.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
